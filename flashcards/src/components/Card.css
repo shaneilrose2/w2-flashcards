@@ -1,0 +1,30 @@
+.Card {
+    display: flex;
+    padding: 2em; 
+   /* background-image: url(.../public/japaneseflag.png) no-repeat center/cover;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1000px;
+    height: 400px;
+    border-radius: 20px;
+    border-bottom: 30px solid #BC002D; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    color: #15151e;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Card .back {
+    display: none;
+}
+
+.Card.flipped .back {
+    display: block;
+}
+
+.Card.flipped .front {
+    display: none;
+}
