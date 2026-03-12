@@ -14,14 +14,14 @@ const Card = ({vocabulary}) => {
     return (
        
             <div className={`Card ${isFlipped ? 'flipped' : ''}`} onClick={handleFlip}>
-                <div className="Card-inner">
+            
                     <div className="front">
                         {vocabulary.word}
                     </div>
                     <div className="back">
                         {vocabulary.definition}
                     </div>
-                </div>
+               
             </div>
     );
 };
